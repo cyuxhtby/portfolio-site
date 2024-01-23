@@ -1,69 +1,78 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Diego A. - Portfolio</title>
-    <style>
-        body {
-            margin-top: 20px;
-            padding: 40px;
-            background-color: #fff; 
-            color: #000; 
-            font-family: serif;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon">
+    <link rel="stylesheet" href="https://unpkg.com/reset-css@5.0.1/reset.css" />
+    <style type="text/css">
+        *, *:before, *:after {
             box-sizing: border-box;
         }
+        html, body {
+            height: 100%;
+        }
+        body {
+            font-family: sans-serif;
+            font-size: 14px;
+            line-height: 1.6;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #333;
+            background: #F9F9F9;
+        }
         .container {
-            text-align: center;
-            max-width: 800px; 
-            width: 100%;
+            max-width: 480px;
+            padding: 50px 30px;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+            animation: fadeInAnimation ease-out 1s;
         }
         h1 {
-            font-size: 1.5em;
-            margin-bottom: 0;
+            font-size: 26px;
+            font-weight: bold;
         }
         .subtitle {
-            font-size: 1em; 
-            margin-top: 0; 
-            color: #666;
+            font-size: 14px;
+            color: #888;
+            margin-bottom: 40px;
         }
         .project {
-            text-align: left;
             margin-bottom: 20px;
-            margin-top: 50px;
         }
         h2 {
-            font-size: 1.2em;
-            margin: 10px 0;
+            font-size: 16px;
+            margin-bottom: 2px;
+        }
+        h2 b {
+        font-weight: bold;
         }
         p {
-            font-size: 1em;
+            margin-bottom: 4px;
         }
         a {
+            color: #000;
             text-decoration: none;
-            color: #000000; 
-            display: block; 
-            margin-top: 5px;
+            font-size: small;
         }
         a:hover {
             text-decoration: underline;
         }
-        @media (max-width: 667px) {
-            .container {
-                padding: 20px;
+        @keyframes fadeInAnimation {    
+            0% {
+                opacity: 0;
+                filter: blur(10px);
             }
-            h1 {
-                font-size: 1.8em;
+            100% {
+                opacity: 1;
+                filter: blur(0px);
             }
-            .subtitle {
-                font-size: 0.5em; 
-            }
-            h2 {
-                font-size: 1.4em;
-            }
-            p {
-                font-size: 1em;
+        }
+        @media screen and (max-width: 480px) {
+            body {
+                display: block;
             }
         }
     </style>
@@ -71,25 +80,21 @@
 <body>
     <div class="container">
         <h1>Diego A. Aguilar</h1>
-        <p class="subtitle">personal website</p> 
+        <p class="subtitle">portfolio site</p> 
         <div class="project">
-            <h2>Clarity</h2>
-            <p>Note-taking and organizational tool</p>
+            <h2><b>Clarity</b> Note-taking and organizational tool</h2>
             <a href="https://getclarity.wtf" target="_blank">Visit Clarity</a>
         </div>
         <div class="project">
-            <h2>Lingua Cache</h2>
-            <p>VR language learning</p>
+            <h2><b>Lingua Cache</b> VR language learning</h2>
             <a href="https://linguacache.com" target="_blank">Visit Lingua Cache</a>
         </div>
         <div class="project">
-            <h2>FRAMED</h2>
-            <p>On-chain social deduction game</p>
+            <h2><b>FRAMED</b> On-chain social deduction game. Group project</h2>
             <a href="https://framed.gg" target="_blank">Visit FRAMED</a>
         </div>
         <div class="project">
-            <h2>Artgig</h2>
-            <p>Tokenized e-commerce</p>
+            <h2><b>Artgig</b> Tokenized e-commerce</h2>
             <a href="https://artgig.xyz" target="_blank">Visit Artgig</a>
         </div>
     </div>
