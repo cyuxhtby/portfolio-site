@@ -25,7 +25,7 @@
         }
         .container {
             max-width: 480px;
-            padding: 50px 30px;
+            margin-top: 80px;
             animation-iteration-count: 1;
             animation-fill-mode: forwards;
             animation: fadeInAnimation ease-out 1s;
@@ -69,9 +69,18 @@
                 filter: blur(0px);
             }
         }
+        .protocol-button {
+            margin-top: 100px;
+            display: block;
+            width: 300px;
+            height: 50px;
+            background: transparent;
+            margin-left: auto;
+            margin-right: auto;
+        }
         @media screen and (max-width: 480px) {
-            body {
-                display: block;
+            h1, h2, p, a {
+            font-size: 95% !important;
             }
         }
     </style>
@@ -95,6 +104,7 @@
         <div class="project">
             <h2><a href="https://artgig.xyz" target="_blank"><b>Artgig</b></a> Tokenized e-commerce</h2>
         </div>
+        <a href="protocol.html" class="protocol-button"></a>
     </div>
 </body>
 </html>
